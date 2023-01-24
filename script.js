@@ -1,6 +1,6 @@
 const quotes = {
     "- Hema Hariharan": 'When you are not happy in the present, have no clue about the future then the heart automatically seeks for the past.',
-    "- Dhatchyani": 'Dark turns light to fire up the tears.',
+    "- Dhatchayani": 'Dark turns light to fire up the tears.',
     "- Joohi Jahan": 'React with no reaction, but still observe everything with logic.',
     "- Harini": 'Characterize people by their action and you will never be fooled by their words.',
     "- Janani": 'If you want to shine like a sun, first burn like a sun.',
