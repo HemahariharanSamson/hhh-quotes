@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <!-- <link rel="shortcut icon" type="image/png" href="quote.png" /> -->
+  <link rel="stylesheet" href="style.css">
+  <title>Quotes</title>
+</head>
+<body oncontextmenu="return false;">
+<video autoplay muted loop id="myVideo">
+    <source src="./My Video1.mp4" type="video/mp4">
+  </video>
+<div class="wrapper">
+    <header>Quote</header>
+    <div class="content">
+      <div class="quote-area">
+        <i class="fas fa-quote-left"></i>
+        <p class="quote" id="quote"></p>
+        <i class="fas fa-quote-right"></i>
+      </div>
+      <div class="author">
+        <span class="name" id="author"></span>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="features">
+        <ul>
+          <li class="speech"><i class="fas fa-volume-up"></i></li>
+          <li class="copy" id="cp"><i class="fas fa-copy" onclick="copyContent()"></i></li>
+          <script>
+            let text = document.getElementById('myText').innerHTML;
+            const copyContent = async () => {
+              try {
+                await navigator.clipboard.writeText(text);
+                console.log('Content copied to clipboard');
+              } catch (err) {
+                console.error('Failed to copy: ', err);
+              }
+            }
+          </script>
+          <li class="music" id="mubtn"><i class="fa fa-music"></i></li>
+          
+        </ul>
+        <button id="generate">Next</button>
+      </div>
+    </div>
+  </div>
+  <audio id="mySong" loop>
+    <source src="./dk.mp3" type="audio/mp3">
+  </audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
